@@ -43,7 +43,7 @@ graph = {
 }
 
 
-distance = dijkstra(graph, 'J', 'A')
+distance = dijkstra(graph, 'I', 'A')
 print('Оптимальное расстояние :', distance)
 
 
