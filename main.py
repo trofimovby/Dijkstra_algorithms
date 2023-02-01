@@ -5,6 +5,8 @@ def dijkstra(graph, start, end):
     distances[start] = 0
     previous_vertices = {vertex: None for vertex in graph}
     queue = [(0, start)]
+
+
     while queue:
         (distance, current) = heapq.heappop(queue)
         if distance > distances[current]:
@@ -17,6 +19,8 @@ def dijkstra(graph, start, end):
                 heapq.heappush(queue, (distance, neighbor))
     path, current = [], end
     while current:
+
+
         path.append(current)
         next_vertex = previous_vertices[current]
         current = next_vertex
