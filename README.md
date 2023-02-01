@@ -19,7 +19,7 @@
 
 Изначальное задание имело вид:
 
-![Фото изначального задания](/img.ph1.png "Text to show on mouseover")
+![Фото изначального задания](/img/ph1.png "Text to show on mouseover")
 
 
 
