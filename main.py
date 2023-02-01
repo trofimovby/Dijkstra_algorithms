@@ -28,18 +28,22 @@ def dijkstra(graph, start, end):
     return (distances[end], path)
 
 graph = {
-    'A': {'B': 6, 'D': 4},
-    'B': {'C': 3},
-    'C': {'E': 4, 'H': 5},
-    'D': {'C': 5, 'H': 3},
-    'E': {'G': 4},
-    'F': {'H': 5},
-    'G': {'J': 2, 'I': 4},
-    'H': {'G': 3, 'I': 7},
-    'I': {'J': 1},
-    'J': {},
+    'I': {'J': 1, 'H': 7, 'G': 4},
+    'J': {'G': 2},
+    'H': {'F': 4, 'D': 3, 'C': 5},
+    'G': {'H': 3, 'E': 4},
+    'F': {'D': 2},
+    'E': {'C': 4},
+    'D': {'A': 4},
+    'C': {'D': 5, 'B': 3},
+    'B': {'A': 6},
+    'A': {},
 
 
 }
 
-print(dijkstra(graph, 'A', 'J'))
+
+distance = dijkstra(graph, 'J', 'A')
+print('Оптимальное расстояние :', distance)
+
+
